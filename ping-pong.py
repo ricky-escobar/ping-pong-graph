@@ -3,7 +3,7 @@ from math import sqrt
 from graphviz import Graph
 from openpyxl import load_workbook
 
-wb = load_workbook("SBP10 - Ping Pong Game History.xlsx")
+wb = load_workbook("SBP10 - Ping Pong Game History.xlsm")
 game_data = wb["Game Data"]
 winners = [cell.value for cell in game_data['C'][3:] if cell.value is not None]
 losers = [cell.value for cell in game_data['F'][3:] if cell.value is not None]
